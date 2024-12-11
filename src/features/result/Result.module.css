@@ -1,0 +1,170 @@
+.container {
+  min-height: 100vh;
+  background: #1B4D3E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content {
+  width: 100%;
+  max-width: 1280px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  display: flex;
+  overflow: hidden;
+}
+
+.leftSection {
+  width: 35%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.titleArea {
+  text-align: center;
+}
+
+.mbtiType {
+  font-size: 64px;
+  font-weight: bold;
+  color: #B8860B;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 32px;
+  color: white;
+  margin: 16px 0 0;
+  font-weight: normal;
+}
+
+.quoteArea {
+  margin-top: auto;
+}
+
+.quote {
+  font-size: 24px;
+  color: #B8860B;
+  font-style: italic;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.rightSection {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  overflow-y: auto;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  color: #B8860B;
+  margin: 0 0 16px;
+  font-weight: bold;
+}
+
+.traitsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.traitItem {
+  background: rgba(184, 134, 11, 0.2);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.strengthsWeaknesses {
+  display: flex;
+  gap: 32px;
+}
+
+.column {
+  flex: 1;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.list li {
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.list li::before {
+  content: "•";
+  color: #B8860B;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.description {
+  color: white;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .leftSection {
+    width: 100%;
+    padding: 24px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .mbtiType {
+    font-size: 48px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .quote {
+    font-size: 20px;
+  }
+
+  .rightSection {
+    padding: 24px;
+  }
+
+  .sectionTitle {
+    font-size: 18px;
+  }
+
+  .traitItem {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+} 

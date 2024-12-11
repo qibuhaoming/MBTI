@@ -1,0 +1,80 @@
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #1B4D3E;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transform-origin: center center;
+}
+
+.progress {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  margin-bottom: 40px;
+}
+
+.progressBar {
+  height: 100%;
+  background: #B8860B;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.questionCard {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 40px;
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.questionText {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.optionButton {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.optionButton:hover {
+  background: rgba(184, 134, 11, 0.2);
+  border-color: #B8860B;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 16px;
+  }
+
+  .questionCard {
+    padding: 24px;
+  }
+
+  .questionText {
+    font-size: 20px;
+  }
+
+  .optionButton {
+    padding: 16px;
+  }
+} 
